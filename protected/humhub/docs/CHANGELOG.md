@@ -6,6 +6,8 @@ HumHub Change Log
 
 Important note for LDAP users: There is a new setting "ID Attribute" which should be set to clearly identify users.
 
+- Fix: Readonly markdown field issue.
+- Enh: Added flag to control automatically created social activities at content creation.
 - Enh: Fixed registration approval/denial mails and made their default value configurable.
 - Enh: Updated primary auth client interface for more flexibility
 - Enh: Added LDAP ID attribute to improve user mapping
@@ -16,7 +18,14 @@ Important note for LDAP users: There is a new setting "ID Attribute" which shoul
 - Enh: Added possibility to sort groups in directory
 - Enh: Removed LDAP UserFilter/LoginFilter length restriction
 - Fix: UTC timezone issue with `TimeZoneDropdownAddition` and added `$includeUTC` flag to `TimezoneHelper::generateList()`
-
+- Fix: ControllerAccess json rule
+- Enh: added `closable = false` as default `ModalDialog` widget setting
+- Fix: trigger richtext `clear` when submitting comment.
+- Fix: missing return in `FileContent::beforeValidate`
+- Fix: Mentioning search with `-` not working
+- Fix #2730: Mentioning search with `-` not working
+- Fix: File search with suffix not working
+- Enh: Added SearchAttributesEvent to improve content addon indexing (comment/file)
 
 1.2.2  (August 2, 2017)
 --------------------------------
